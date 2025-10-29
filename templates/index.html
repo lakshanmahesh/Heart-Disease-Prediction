@@ -1,0 +1,118 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Heart Disease Prediction</title>
+  <link rel="stylesheet" href="/static/style.css" />
+</head>
+<body>
+  <main class="container">
+    <h1>❤️ Heart Disease Prediction</h1>
+    <p class="subtitle">Enter patient data and predict heart disease using your trained model.</p>
+
+    <form action="/predict" method="post" class="card">
+      <div class="grid">
+        <label>Age
+          <input name="age" type="number" step="1" min="1" required />
+        </label>
+
+        <label>Sex
+          <select name="sex" required>
+            <option value="" selected hidden>Select</option>
+            <option value="0">0 - Female</option>
+            <option value="1">1 - Male</option>
+          </select>
+        </label>
+
+        <label>Chest Pain Type (cp)
+          <select name="cp" required>
+            <option value="" selected hidden>Select</option>
+            <option value="0">0 - Typical angina</option>
+            <option value="1">1 - Atypical angina</option>
+            <option value="2">2 - Non-anginal pain</option>
+            <option value="3">3 - Asymptomatic</option>
+          </select>
+        </label>
+
+        <label>Resting Blood Pressure (trestbps, mm Hg)
+          <input name="trestbps" type="number" step="1" required />
+        </label>
+
+        <label>Serum Cholesterol (chol, mg/dl)
+          <input name="chol" type="number" step="1" required />
+        </label>
+
+        <label>Fasting Blood Sugar > 120 (fbs)
+          <select name="fbs" required>
+            <option value="" selected hidden>Select</option>
+            <option value="0">0 - False</option>
+            <option value="1">1 - True</option>
+          </select>
+        </label>
+
+        <label>Resting ECG (restecg)
+          <select name="restecg" required>
+            <option value="" selected hidden>Select</option>
+            <option value="0">0 - Normal</option>
+            <option value="1">1 - ST-T abnormality</option>
+            <option value="2">2 - Left ventricular hypertrophy</option>
+          </select>
+        </label>
+
+        <label>Max Heart Rate (thalach)
+          <input name="thalach" type="number" step="1" required />
+        </label>
+
+        <label>Exercise Induced Angina (exang)
+          <select name="exang" required>
+            <option value="" selected hidden>Select</option> 
+            <option value="0">0 - No</option>
+            <option value="1">1 - Yes</option>
+          </select>
+        </label>
+
+        <label>Oldpeak (ST depression)
+          <input name="oldpeak" type="number" step="0.1" required />
+        </label>
+
+        <label>Slope of ST Segment (slope)
+          <select name="slope" required>
+            <option value="" selected hidden>Select</option> 
+            <option value="0">0 - Downsloping</option>
+            <option value="1">1 - Flat</option>
+            <option value="2">2 - Upsloping</option>
+          </select>
+        </label>
+
+        <label>Number of Major Vessels (ca)
+          <select name="ca" required>
+            <option value="" selected hidden>Select</option>
+            <option value="0">0</option>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+          </select>
+        </label>
+
+        <label>Thalassemia (thal)
+          <select name="thal" required>
+            <option value="" selected hidden>Select</option>
+            <option value="0">0 - Normal</option>
+            <option value="1">1 - Fixed defect</option>
+            <option value="2">2 - Reversible defect</option>
+          </select>
+        </label>
+      </div>
+
+      <div class="actions">
+        <button type="submit" class="btn">Predict</button>
+      </div>
+    </form>
+
+    <footer>
+      <p>Made with ❤️ Flask & your trained model.pickle</p>
+    </footer>
+  </main>
+</body>
+</html>

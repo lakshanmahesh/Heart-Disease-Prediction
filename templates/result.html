@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>Prediction Result</title>
+<link rel="stylesheet" href="/static/style.css" />
+</head>
+<body>
+  <main class="container">
+    <div class="card result">
+      <h1>🩺 Prediction Result</h1>
+      <p class="prediction {{color}}">{{ prediction_text }}</p>
+
+      <h2>Input Summary</h2>
+      <ul>
+        {% for k,v in inputs.items() %}
+        <li><strong>{{k}}:</strong> {{v}}</li>
+        {% endfor %}
+      </ul>
+
+      <a href="/" class="btn">🔁 Try Again</a>
+    </div>
+  </main>
+</body>
+</html>
