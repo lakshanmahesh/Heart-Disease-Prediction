@@ -43,7 +43,7 @@ Users can input parameters (age, blood pressure, etc.) and get predictions insta
   pickle — Model serialization
 
   ### 1. Clone the repository
-      git clone https://github.com/yourusername/Heart-Disease-Prediction.git
+      git clone https://https://github.com/lakshanmahesh/Heart-Disease-Prediction.git
       cd Heart-Disease-Prediction
 
   ### 2. Install dependencies
@@ -57,5 +57,10 @@ Users can input parameters (age, blood pressure, etc.) and get predictions insta
 | ------- | ------------------------------------------------- | -------- |
 | Initial | Logistic Regression                               | 80.32%   |
 | Tuned   | Logistic Regression (after hyperparameter tuning) | 81.96%   |
+
+<img width="1617" height="920" alt="Capture1" src="https://github.com/user-attachments/assets/085bea38-c51d-4ced-b56f-94021134c58a" />
+<img width="1377" height="845" alt="Capture2" src="https://github.com/user-attachments/assets/08838fee-477e-49b5-a3a6-2b1a9532394b" />
+
+
 
 
